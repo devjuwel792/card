@@ -1,0 +1,129 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #212121;
+  }
+
+img{
+    max-width: 100%;
+}
+.container{
+  
+}
+
+.card .card_img img{
+    display: block;
+    max-width: 50%;
+    margin: auto;
+    padding-top:20px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.card:hover .card_img img{
+    max-width: 40%;
+    margin: auto;
+    padding-top:20px;
+   
+   
+    
+}
+
+.card{
+    position: relative;
+    height: 420px;
+    width: 320px;
+    background-color: #122936;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 0;
+    
+
+}
+.card::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: -50%;
+    background-color:yellowgreen ;
+    transform: skewY(345deg);
+    transition: .5s;
+   z-index: -1; 
+    
+} 
+.card:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+    
+}
+.card::after{
+    content: "Mouse";
+    position:absolute;
+    bottom: 20px;
+    left: 0;
+    font-size: 7em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .1);
+    z-index: -4;
+}
+.card .content_body{
+    text-align: center;
+
+}
+.card .content_body .card_title{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+.card .content_body .card_price{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: content: '\F0FEA';;
+    color:greenyellow;
+    padding: 10px 0;
+
+}
+.card .content_body .card_button button{
+    margin-top: 20px;
+    position: relative;
+    top: 100px;
+    border: none;
+    background-color: yellow;
+    padding: 14px 28px;
+    z-index: 4;
+    opacity: 0;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.card:hover .content_body .card_button button{
+    top: 0;
+    opacity: 1;
+
+    
+}
