@@ -12,6 +12,12 @@
     -ms-transition: all 0.3 linear;
     -o-transition: all 0.3 linear;
 }
+
+html,body{
+    margin: 0;
+    padding: 0;
+    
+}
 .container{
     display: flex;
     justify-content: center;
@@ -88,16 +94,7 @@
     z-index: -1;
     clip-path: circle(20% at 90% 10%);
     transition:.2s;
-    /* border-radius:5px; */
-    -webkit-transition:;
-    -moz-transition:.2s;
-    -ms-transition:.2s;
-    -o-transition:.2s;
-    -webkit-transition:.2s;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
+   
 }
 .card:nth-child(2):after{
   background-color: #0093e3;
