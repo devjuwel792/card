@@ -25,10 +25,6 @@ img{
     margin: auto;
     padding-top:20px;
     transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
 }
 .card:hover .card_img img{
     max-width: 40%;
