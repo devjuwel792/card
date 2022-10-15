@@ -17,9 +17,7 @@ body {
 img{
     max-width: 100%;
 }
-.container{
-  
-}
+
 
 .card .card_img img{
     display: block;
@@ -95,7 +93,7 @@ img{
 .card .content_body .card_price{
     font-size: 24px;
     font-weight: 700;
-    letter-spacing: content: '\F0FEA';;
+    letter-spacing:1px;
     color:greenyellow;
     padding: 10px 0;
 
